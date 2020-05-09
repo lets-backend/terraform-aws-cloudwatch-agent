@@ -14,6 +14,9 @@ data "template_file" "cloudwatch_agent_configuration_advanced" {
     cpu_resources               = var.cpu_resources
     disk_resources              = jsonencode(var.disk_resources)
     metrics_collection_interval = var.metrics_collection_interval
+    log_file_path               = var.log_file_path
+    log_group_name              = var.log_group_name
+    log_stream_name              = var.log_stream_name
   }
 }
 
@@ -25,6 +28,9 @@ data "template_file" "cloudwatch_agent_configuration_standard" {
     cpu_resources               = var.cpu_resources
     disk_resources              = jsonencode(var.disk_resources)
     metrics_collection_interval = var.metrics_collection_interval
+    log_file_path               = var.log_file_path
+    log_group_name              = var.log_group_name
+    log_stream_name              = var.log_stream_name
   }
 }
 

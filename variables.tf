@@ -73,6 +73,21 @@ EOF
   default = 60
 }
 
+variable "log_file_path" {
+  description = <<EOF
+  Path to a file that you want to process by cloud watch logs agent
+EOF
+
+  type    = string
+}
+
+variable "log_group_name" {
+  type = string
+}
+variable "log_stream_name" {
+  type = string
+}
+
 variable "attributes" {
   description = "Add a suffix to the resource names."
   type        = list(string)

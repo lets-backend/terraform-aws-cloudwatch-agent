@@ -14,6 +14,10 @@ runcmd:
         curl -O https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
         rpm -U ./amazon-cloudwatch-agent.rpm
         ;;
+      "Amazon Linux AMI") echo "Installing the cloudwatch agent for Amazon Linux."
+        curl -O https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
+        rpm -U ./amazon-cloudwatch-agent.rpm
+        ;;
       Centos) echo "Installing the cloudwatch agent for Centos Linux."
         curl -O https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm
         rpm -U ./amazon-cloudwatch-agent.rpm
